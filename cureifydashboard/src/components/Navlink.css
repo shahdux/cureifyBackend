@@ -1,0 +1,36 @@
+
+ .navLink{
+    color: #6B7280;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+ }
+  .navLink:hover{
+    color:#00A4AA;
+
+ }
+ .iconwithnavlink{
+    display: flex;
+       height: 66px;
+    display: flex;
+       padding-left: 30px;
+    align-items: center;
+    gap: 12px;
+    transition: 0.5s ease;
+ }
+
+ .iconwithnavlink:hover{
+background: rgba(0, 164, 170, 0.07);}
+.iconwithnavlink:hover .navlink{
+     color: #00A4AA
+} 
+.navlink{
+    color: #6B7280;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}

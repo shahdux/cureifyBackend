@@ -1,0 +1,15 @@
+ .sectionTitles{
+color: #052651;
+font-family: Poppins;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+margin: 0;
+line-height: normal;
+}
+
+@media (max-width: 1200px){
+    .sectionTitles{
+        font-size: 24px;
+    }
+}

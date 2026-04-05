@@ -1,0 +1,32 @@
+ .tableheader{
+    color: #052651;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin: 0;
+width: 250px;
+
+}
+@media (max-width: 1500px) {
+    .tableheader {
+   
+    width: 160px;
+}
+}
+@media (max-width: 1200px) {
+    
+.tableheader {
+   
+    width: 160px;
+}
+}
+@media (max-width: 600px) {
+    
+.tableheader {
+   
+    width: 95px;
+    font-size: 18px;
+}
+}
