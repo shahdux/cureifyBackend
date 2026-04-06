@@ -10,6 +10,7 @@ import { supabase } from '../supabase';
 import edit from "../assets/edit.svg";
 import del from "../assets/delte.svg"
 import StrokeButton from '../components/StrokeButton';
+import { Link } from 'react-router-dom';
 
 const Features = () => {
    const [features, setFeatures] = useState([""]);
@@ -76,8 +77,10 @@ const deleteFeature = async (id) => {
                            <p className='featureDes'>{feature.des2}</p>
                </div>
                <div className='icons'>
+           <Link to ={"/edit/"+feature.id}>
            
                <img src={edit} alt="edit icon" />
+           </Link>
                    <img onClick={()=> deleteFeature(feature.id)} src={del} alt="delete icon" />
                </div>
               </div>
