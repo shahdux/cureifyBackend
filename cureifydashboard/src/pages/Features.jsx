@@ -6,9 +6,11 @@ import FeatureCard from '../components/FeatureCard';
 // import FeatureCard from '../component/FeatureCard';
 // import { supabase } from '../Supabase';
 import fimg1 from "../assets/fcard1.svg"
+import { supabase } from '../supabase';
 
 
 const Features = () => {
+   const [features, setFeatures] = useState([""]);
 //    const [loading, setLoading] = useState(true);
 //    const [features, setFeatures] = useState("");
 
@@ -21,7 +23,14 @@ const Features = () => {
 //          callGetAPI3();
 //    },[]);
 //    if (loading) return <p>Loading...</p>;
+useEffect(()=>{
+  const getTaks = async ()=>{
+    const res = await supabase.from("Features").select("*");
+   setFeatures(res.data);
 
+}
+getTaks();
+},[])
     return ( 
         <>
           <div className='nabarwithmain'>
@@ -34,16 +43,16 @@ const Features = () => {
            
 
         <div className='forfeaturesdiv'>
-         {/* {
+         {
            features.map((feature)=>{
              return   <div className='forfeaturesdiv'>  <FeatureCard
-             featureimg={feature.Thumbnail}
-             featuretitle={feature.Title}
-             featuredes={feature.description}
+             featureimg={feature.thumbnail}
+             featuretitle={feature.name_en}
+             featuredes={feature.des2}
              /></div>
             })
-          } */}
-       <FeatureCard
+          }
+       {/* <FeatureCard
              featureimg={fimg1}
              featuretitle="fuheu"
              featuredes="j"
@@ -52,7 +61,7 @@ const Features = () => {
              featureimg={fimg1}
              featuretitle="fuheu"
              featuredes="j"
-             />
+             /> */}
         </div>
         
           </div>
