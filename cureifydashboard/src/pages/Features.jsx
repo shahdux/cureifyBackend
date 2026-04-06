@@ -11,6 +11,8 @@ import edit from "../assets/edit.svg";
 import del from "../assets/delte.svg"
 import StrokeButton from '../components/StrokeButton';
 import { Link } from 'react-router-dom';
+import add from '../assets/add.svg';
+
 
 const Features = () => {
    const [features, setFeatures] = useState([""]);
@@ -42,6 +44,13 @@ const deleteFeature = async (id) => {
   const res = await supabase.from("Features").delete().eq('id', id);
   setFeatures(features.filter((feature) => feature.id !== id));
 };
+
+// const creatFeature = async ()=>{
+//  const res = await supabase.from("Features").insert([{
+//   "name_en": "test"
+//  }])
+//  console.log(res)
+// }
     return ( 
         <>
           <div className='nabarwithmain'>
@@ -49,7 +58,13 @@ const deleteFeature = async (id) => {
         <div className='mainBar'>
               <div className='titlewsearch width85'>
             <SectionTitle Sectiontitle="Features"/>
+               <Link to="/add-feature" style={{textDecoration: "none"}}>
             <StrokeButton btext="Add" />
+               </Link>
+            {/* <div  className='strokeb'>
+                    <img src={add} alt="add icon" />
+                    <p className='stoketext'>Add</p>
+                </div> */}
             </div>
             
            {/* <div className='featurecard'>

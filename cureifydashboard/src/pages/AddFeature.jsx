@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./AddFeature.css"
 import Button from '../components/Button';
 // import Navbar from '../component/Navbar';
@@ -15,8 +15,19 @@ import Button from '../components/Button';
 // import bold from "../assets/bold.svg";
 import Navbar from './../components/Navbar';
 import SectionTitle from './../components/SectionTitle';
+import { supabase } from '../supabase';
 
 const AddFeature = () => {
+    // const [image, setImage] = useState(""); 
+const [title, setTitle] = useState("");
+const [description, setDescription] = useState("");
+async function saveFeature() {
+  const res = await supabase.from("Features").insert({
+     
+      "name_en": title,
+      "des2": description,
+     });}
+//    const [title, setTitle] = useState("");
 
   return ( 
     <>
@@ -39,18 +50,18 @@ const AddFeature = () => {
              
             <div className='titlewithinput'>
               <p className='project-image'>Title</p>
-              <input type="text" className='input-width' name="" id="" placeholder=''/>  
+              <input  onChange={(e) => setTitle(e.target.value)} type="text" className='input-width' name="" id="" placeholder=''/>  
             </div>
            
             <div className='titlewithinput'>
               <p className='project-image'>Description</p>
               <div className='rte1'>
             
-                <input type="text" className='input-width2' name="" id="" placeholder=''/>  
+                <input onChange={(e) => setDescription(e.target.value)} type="text" className='input-width2' name="" id="" placeholder=''/>  
               </div>
             </div>
 
-            <div className='buttoncont'>
+            <div  onClick={saveFeature} className='buttoncont'>
               <Button buttontext="Save" buttonwidth="200px"/>
             </div>
           </div>
