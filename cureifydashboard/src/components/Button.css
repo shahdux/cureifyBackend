@@ -1,0 +1,19 @@
+.button{
+    display: flex;
+width: 210px;
+height: 49px;
+padding: 8.653px;
+justify-content: center;
+align-items: center;
+gap: 8.653px;
+border-radius: 4.326px;
+background: #01A7AD;
+}
+.buttontext2{
+    color: #FFF;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}

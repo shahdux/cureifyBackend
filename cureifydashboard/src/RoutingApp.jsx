@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import Home from './pages/Home';
 import Features from './pages/Features';
+import AddFeature from './pages/AddFeature';
 import EditFeature from './pages/EditFeature';
+
 
 const RoutingApp = () => {
     return ( 
@@ -11,6 +13,8 @@ const RoutingApp = () => {
         <Routes>
   <Route path='/' element={<Home />} />
     <Route path='/features' element={<Features />} />
+        <Route path='/add-feature' element={<AddFeature />} />
+
         <Route path='/edit/:id' element={<EditFeature />} />
 
 
