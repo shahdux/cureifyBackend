@@ -50,7 +50,10 @@ transition: 0.5s ease;
     padding-bottom: 20px;
 }
  
-
+.iconwithnavlink.active img,
+.iconwithnavlink img.active {
+    filter: brightness(0) saturate(100%) invert(51%) sepia(97%) saturate(400%) hue-rotate(138deg) brightness(95%) contrast(101%);
+}
 @media (max-width: 1200px) {
 
   .navbar {
