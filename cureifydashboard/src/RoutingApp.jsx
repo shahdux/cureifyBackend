@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import Home from './pages/Home';
+import Features from './pages/Features';
 
 const RoutingApp = () => {
     return ( 
@@ -8,6 +9,8 @@ const RoutingApp = () => {
                <BrowserRouter>
         <Routes>
   <Route path='/' element={<Home />} />
+    <Route path='/features' element={<Features />} />
+
     {/* <Route path='/works' element={<Works />} />
       <Route path='/works/:key' element={<ProjectDetails />} /> 
             <Route path='/about' element={<About />} /> 

@@ -1,0 +1,49 @@
+.featurecard{
+    width: 558.673px;
+border-radius: 10px;
+background: #FFF;
+box-shadow: 0 4px 12px 0 rgba(196, 202, 224, 0.59);
+display: flex;
+gap: 12px;
+justify-content: center;
+    align-items: start;
+    padding: 24px 20px
+}
+.for2texts{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.featureTitle{
+    color: #052651;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+width: 287px;
+margin: 0;
+}
+.featureDes{
+color: #052651;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 349px;
+margin: 0;
+}
+.icons{
+    display: flex;
+    gap: 12px;
+}
+@media (max-width: 600px) {
+   .featureimgclass{
+    width: 100%;
+   }
+   .featurecard{
+    flex-direction: column;
+    width: 380px;
+   }
+}

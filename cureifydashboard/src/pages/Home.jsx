@@ -3,7 +3,7 @@ import "./Home.css"
 import SectionTitle from '../components/SectionTitle';
 import StatisticCard from '../components/StatisticCard';
 import Navbar from '../components/Navbar';
-import logo from '../assets/logo.svg';
+// import logo from '../assets/logo.svg';
 
 
 
@@ -24,7 +24,6 @@ const Home = () => {
     return ( 
         <>
         <div className='nabarwithmain'>
-            <img src={logo} alt="logo" />
     <Navbar />
         <div className='mainBar'>
             <div className='titlewsearch'>

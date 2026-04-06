@@ -19,7 +19,7 @@ import logout from '../assets/log.svg';
 
 
 
-import logo from '../assets/logo.svg';
+import logosmall from '../assets/logo.svg';
 
 
 const Navbar = () => {
@@ -34,9 +34,9 @@ const Navbar = () => {
       </div>
 
       <div className={`navbar ${open ? "active" : ""}`}>
-                    <img src={logo} alt="logo" className='logo'/>
-        
 
+                    <img src={logosmall} alt="logo" className='logosmall'/>
+       
         <Navlink linkicon={dashboardicon} linktitle="Dashboard" />
 
         <Navlink linkicon={users} linktitle="Users" />
