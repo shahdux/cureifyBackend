@@ -34,3 +34,6 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
+.iconwithnavlink:hover img {
+    filter: brightness(0) saturate(100%) invert(51%) sepia(97%) saturate(300%) hue-rotate(138deg) brightness(95%) contrast(101%);
+}

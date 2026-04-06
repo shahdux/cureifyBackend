@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "./Navbar.css";
 import Navlink from './Navlink';
-import dashboardicon from '../assets/dashboard.svg';
+import greyd2 from '../assets/Vector.png';
 import users from '../assets/users.svg';
 import orders from '../assets/cart.svg';
 import messages from '../assets/messages.svg';
@@ -20,6 +20,7 @@ import logout from '../assets/log.svg';
 
 
 import logosmall from '../assets/logo.svg';
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -36,16 +37,18 @@ const Navbar = () => {
       <div className={`navbar ${open ? "active" : ""}`}>
 
                     <img src={logosmall} alt="logo" className='logosmall'/>
-       
-        <Navlink linkicon={dashboardicon} linktitle="Dashboard" />
+       <Link to="/" style={{textDecoration: "none"}}>
+
+        <Navlink linkicon={greyd2} linktitle="Dashboard" /></Link>
 
         <Navlink linkicon={users} linktitle="Users" />
 
         <Navlink linkicon={orders} linktitle="Orders" />
 
         <Navlink linkicon={messages} linktitle="Messages" />
-
+<Link to="/features" style={{textDecoration: "none"}}>
         <Navlink linkicon={features} linktitle="Features" />
+</Link>
                 {/* <Navlink linkicon={pharmacies} linktitle="Pharmacies" /> */}
                                 <Navlink linkicon={careers} linktitle="Careers" />
                                
