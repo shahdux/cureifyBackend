@@ -7,7 +7,9 @@ import FeatureCard from '../components/FeatureCard';
 // import { supabase } from '../Supabase';
 import fimg1 from "../assets/fcard1.svg"
 import { supabase } from '../supabase';
-
+import edit from "../assets/edit.svg";
+import del from "../assets/delte.svg"
+import StrokeButton from '../components/StrokeButton';
 
 const Features = () => {
    const [features, setFeatures] = useState([""]);
@@ -30,7 +32,15 @@ useEffect(()=>{
 
 }
 getTaks();
-},[])
+},[]);
+
+// const deleteFeature = async (id)=>{
+//       const res = await supabase.from("Features").delete().eq('id', id)
+//     }
+const deleteFeature = async (id) => {
+  const res = await supabase.from("Features").delete().eq('id', id);
+  setFeatures(features.filter((feature) => feature.id !== id));
+};
     return ( 
         <>
           <div className='nabarwithmain'>
@@ -38,18 +48,48 @@ getTaks();
         <div className='mainBar'>
               <div className='titlewsearch width85'>
             <SectionTitle Sectiontitle="Features"/>
+            <StrokeButton btext="Add" />
             </div>
             
+           {/* <div className='featurecard'>
+               <img src={props.featureimg} alt="feature cover img" className='featureimgclass'/>
+               <div className='for2texts'>
+                   <p className='featureTitle'>{props.featuretitle}</p>
+                           <p className='featureDes'>{props.featuredes}</p>
+               </div>
+               <div className='icons'>
            
+               <img src={edit} alt="edit icon" />
+                   <img onClick={()=> deleteFeature} src={del} alt="delete icon" />
+               </div>
+           
+           </div> */}
 
         <div className='forfeaturesdiv'>
          {
            features.map((feature)=>{
-             return   <div className='forfeaturesdiv'>  <FeatureCard
+             return   <div className='forfeaturesdiv'> 
+              <div className='featurecard'> 
+ <img src={feature.thumbnail} alt="feature cover img" className='featureimgclass'/>
+ <div className='for2texts'>
+                   <p className='featureTitle'>{feature.name_en}</p>
+                           <p className='featureDes'>{feature.des2}</p>
+               </div>
+               <div className='icons'>
+           
+               <img src={edit} alt="edit icon" />
+                   <img onClick={()=> deleteFeature(feature.id)} src={del} alt="delete icon" />
+               </div>
+              </div>
+             
+              {/* <FeatureCard
              featureimg={feature.thumbnail}
              featuretitle={feature.name_en}
              featuredes={feature.des2}
-             /></div>
+             
+             /> */}
+             
+             </div>
             })
           }
        {/* <FeatureCard

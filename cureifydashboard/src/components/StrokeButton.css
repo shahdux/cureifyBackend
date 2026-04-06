@@ -1,0 +1,46 @@
+.stoketext{
+color: #00A4AA;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.strokeb{
+    display: flex;
+width: 155px;
+height: 50px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+flex-shrink: 0;
+border-radius: 4.326px;
+border: 1px solid #00A4AA;
+}
+
+.strokeb {
+    display: flex;
+    width: 155px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 4.326px;
+    border: 1px solid #00A4AA;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.strokeb:hover {
+    background-color: #00A4AA;
+    box-shadow: 0 4px 12px rgba(0, 164, 170, 0.3);
+}
+
+.strokeb:hover .stoketext {
+    color: #fff;
+}
+
+.strokeb:hover img {
+    filter: brightness(0) invert(1);
+}

@@ -4,6 +4,9 @@ import edit from "../assets/edit.svg";
 import del from "../assets/delte.svg"
 
 const FeatureCard = (props) => {
+    // const deleteFeature = (id)=>{
+    //     console.log(id)
+    // }
     return ( 
 <>
 <div className='featurecard'>
