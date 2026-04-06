@@ -16,17 +16,22 @@ import Button from '../components/Button';
 import Navbar from './../components/Navbar';
 import SectionTitle from './../components/SectionTitle';
 import { supabase } from '../supabase';
+import { useNavigate } from 'react-router-dom';
 
 const AddFeature = () => {
     // const [image, setImage] = useState(""); 
 const [title, setTitle] = useState("");
 const [description, setDescription] = useState("");
+const navigate = useNavigate();
 async function saveFeature() {
   const res = await supabase.from("Features").insert({
      
       "name_en": title,
       "des2": description,
-     });}
+     });
+       navigate("/features");
+    }
+
 //    const [title, setTitle] = useState("");
 
   return ( 
