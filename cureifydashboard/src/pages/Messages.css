@@ -1,0 +1,19 @@
+.marginleft90{
+    margin-left: 90px;
+}
+.width85{
+    width: 73%;
+}
+.foractionbuttons2 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+@media (max-width: 700px) {
+
+
+    .padding2 {
+       display: none;
+    }
+   
+}
