@@ -1,0 +1,151 @@
+.orderCard {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+.gap20{
+    gap: 20px;
+    width: 80%;
+}
+.orderHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.orderStatus.on_delivery, 
+.orderStatus.on\ delivery {
+    background: #e8f0fe;
+    color: #1a56a4;
+    border: 1px solid #b3cdf5;
+}
+
+.orderStatus.completed,
+.orderStatus.completed {
+    background: #d4f5e2;
+    color: #1a7a45;
+    border: 1px solid #a3e8c4;
+}
+.orderIdStatus {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.orderId {
+    color: #8a8a8a;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.orderStatus {
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+        font-family: poppins;
+
+}
+
+.orderStatus.completed {
+    background: #d4f5e2;
+    color: #1a7a45;
+}
+
+.orderStatus.pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.orderStatus.cancelled {
+    background: #fde8e8;
+    color: #a32d2d;
+}
+
+.orderActions {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.orderActionIcon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.deleteIcon {
+    filter: invert(20%) sepia(90%) saturate(400%) hue-rotate(330deg);
+}
+
+.orderCustomer {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.customerName {
+    font-size: 18px;
+    font-weight: 700;
+    color: #052651;
+    margin: 0;
+        font-family: poppins;
+
+}
+
+.customerAddress {
+    font-size: 14px;
+    color: #8a8a8a;
+    margin: 0;
+        font-family: poppins;
+
+}
+
+.orderItem {
+    background: #f5f6fa;
+    border-radius: 10px;
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.itemRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.itemName {
+    font-size: 15px;
+    color: #052651;
+    font-weight: 500;
+        font-family: poppins;
+
+}
+
+.itemQty {
+    font-size: 14px;
+        font-family: poppins;
+
+    color: #8a8a8a;
+}
+
+.itemEst {
+    font-size: 13px;
+    color: #8a8a8a;
+        font-family: poppins;
+
+}
+
+.itemPrice {
+    font-size: 15px;
+    font-weight: 700;
+    color: #052651;
+    font-family: poppins;
+}
