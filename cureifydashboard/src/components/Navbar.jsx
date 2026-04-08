@@ -135,7 +135,10 @@ const Navbar = () => {
 
         <Navlink linkicon={users} linktitle="Users" navcolor={isActive("/users")} />
         <Navlink linkicon={orders} linktitle="Orders" navcolor={isActive("/orders")} />
+                <Link to="/messages" style={{textDecoration: "none"}}>
+
         <Navlink linkicon={messages} linktitle="Messages" navcolor={isActive("/messages")} />
+        </Link>
 
         <Link to="/features" style={{textDecoration: "none"}}>
           <Navlink linkicon={features} linktitle="Features" navcolor={isActive("/features")} />

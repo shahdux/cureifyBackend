@@ -5,6 +5,7 @@ import Features from './pages/Features';
 import AddFeature from './pages/AddFeature';
 import EditFeature from './pages/EditFeature';
 import Messages from './pages/Messages';
+import MessageModal from './pages/MessageModal';
 
 
 const RoutingApp = () => {
@@ -15,6 +16,7 @@ const RoutingApp = () => {
   <Route path='/' element={<Home />} />
     <Route path='/features' element={<Features />} />
         <Route path='/messages' element={<Messages />} />
+<Route path="/msg-details/:id" element={<MessageModal />} />
 
         <Route path='/add-feature' element={<AddFeature />} />
 

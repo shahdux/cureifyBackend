@@ -1,0 +1,115 @@
+.messageForm{
+    display: flex;
+    flex-direction: column;
+width: 427px;
+height: auto;
+padding: 30px 20px;
+justify-content: center;
+
+gap: 10px;
+border-radius: 10px;
+background: #FFF;
+box-shadow: 0 4px 12px 0 rgba(127, 130, 141, 0.15);
+}
+.formtitlewbutton{
+    display: flex;
+        gap: 135px;
+
+}
+.secpartform{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* justify-content: center;
+    align-items: center; */
+}
+.senderwinoput{
+      display: flex;
+    flex-direction: column;
+    gap: 8px;
+    /* justify-content: center;
+    align-items: center; */
+}
+.sender{
+    color: #052651;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+font-weight: 600;
+
+line-height: normal;
+margin: 0;
+}
+.senderName{
+    color: #052651;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin: 0;
+}
+.messageInput{
+ display: flex;
+    height: auto;
+    /* padding: 10px 20px; */
+    align-items: center;
+    width: 380px;
+    padding: 0px 20px;
+    border-radius: 10px;
+    border: 1px solid #BABABA;
+}
+.message{
+    color: #052651;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 462px;
+}
+.date{
+    color: #052651;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.55); /* dark background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999; /* make sure it's above everything */
+}
+
+
+.messageForm {
+ /* margin-left: 10%; */
+     position: absolute;
+    top: 100px;
+}
+
+@media (max-width: 700px) {
+
+
+    .messageForm {
+ margin-left: 0%;
+ width: 397px;
+    }
+    .messageInput {
+   
+    width: 350px;}
+    .formtitlewbutton {
+  
+    gap: 175px;
+}
+}
