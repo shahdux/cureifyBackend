@@ -46,7 +46,7 @@ const Orders = () => {
 <span className={`orderStatus ${order.status?.toLowerCase()}`}>{order.status}</span>                                        </div>
                                         <div className='orderActions'>
                                             <img src={edit} alt="edit icon" className='orderActionIcon' />
-                                            {/* <img src={del} alt="delete icon" className='orderActionIcon deleteIcon' onClick={() => deleteOrder(order.id)} /> */}
+                                            <img src={del} alt="delete icon" className='orderActionIcon deleteIcon' onClick={() => deleteOrder(order.id)} />
                                         </div>
                                     </div>
 

@@ -56,7 +56,7 @@ const deleteFeature = async (id) => {
           <div className='nabarwithmain'>
         <Navbar/>
         <div className='mainBar'>
-              <div className='titlewsearch width85'>
+              <div className='titlewsearch width85p'>
             <SectionTitle Sectiontitle="Features"/>
                <Link to="/add-feature" style={{textDecoration: "none"}}>
             <StrokeButton btext="Add" />
