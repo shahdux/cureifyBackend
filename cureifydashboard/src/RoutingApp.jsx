@@ -6,6 +6,7 @@ import AddFeature from './pages/AddFeature';
 import EditFeature from './pages/EditFeature';
 import Messages from './pages/Messages';
 import MessageModal from './pages/MessageModal';
+import Users from './pages/Users';
 
 
 const RoutingApp = () => {
@@ -21,16 +22,11 @@ const RoutingApp = () => {
         <Route path='/add-feature' element={<AddFeature />} />
 
         <Route path='/edit/:id' element={<EditFeature />} />
+          <Route path='/users' element={<Users />} />
 
 
-    {/* <Route path='/works' element={<Works />} />
-      <Route path='/works/:key' element={<ProjectDetails />} /> 
-            <Route path='/about' element={<About />} /> 
-                        <Route path='/contact' element={<Contact />} /> 
-                                                <Route path='/blogs' element={<Blog />} /> 
-                                                                                                <Route path='/idek' element={<TestApi />} /> 
-                                                                                                                                                                                                <Route path='/blogs/:key' element={<BlogDetails />} /> 
- */}
+
+ 
 
 
 

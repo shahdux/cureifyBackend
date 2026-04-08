@@ -38,13 +38,13 @@ const Messages = (params) => {
         <div className='nabarwithmain'>
             <Navbar/>
             <div className='mainBar'>
-                <div className='titlewsearch width90'>
+                <div className='titlewsearch'>
                     <SectionTitle Sectiontitle="Messages Management"/>
                 </div>
                 <input className='searchcont width85' type="text" placeholder='Search' />
 
 
-                <div className='titlewsection2 titlewsection3'>
+                <div className='titlewsection2'>
                     <div className='titlewsearch width90'>
                         <SectionTitle textsize="24px" Sectiontitle="All Messages"/>
                     </div>

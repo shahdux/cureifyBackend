@@ -1,0 +1,208 @@
+.sc2{
+    width: 73%;
+}
+.gap2{
+    gap: 120px;
+}
+.gap40{
+    gap: 40px;
+    width: auto;
+     width: 1190px;
+}
+.titlewsection3{
+    width: 90%;
+}
+.foractionbuttons{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    margin-left:40px ;
+}
+.titlewidth{
+    width: 251px;
+}
+.projectstabwidth{
+    width: 1190px;
+     display: flex;
+    gap: 168px;
+        align-items: center;
+
+    gap: 172px;
+ 
+     
+
+}
+.actionspadding{
+    color: #052651;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+    margin-left: 280px;
+}
+.actionspaddingprojects{
+    color: #052651;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+  
+}
+.paddingtop{
+ padding-top: 20px;
+}
+.paddingleft130{
+    padding-left: 130px;}
+    .paddingleft110{
+    padding-left: 110px;}
+.width90{
+    width: 90%;
+}
+.forfirstline22{
+    display: flex;
+    gap: 130px;
+     gap: 20px;
+        align-items: center;
+
+ 
+      border-top: 1px solid #E8E8E8;
+       gap: 40px;
+ 
+     width: 1190px;
+     
+
+
+}
+.padding22{
+    padding-left: 100px;
+}
+.padding33{
+    padding-left: 40px;
+}
+.nomleft{
+    margin-left: 0;
+}
+.paddingledt{
+    padding-left: 200px;
+}
+.paddingledt{
+   width: auto;
+   padding-left: 180px;
+}
+.namepadding{
+    padding-left: 130px;
+}
+.gap120{
+   
+    gap: 120px;
+}
+.projectpaddingledt20{
+        padding-left: 40px;
+}
+.pwidthauto{
+    width: auto;
+}
+.actionsmledt{
+    margin-left: 290px;
+}
+.pleft75i{
+    padding-left: 73px;
+}
+.bluetext{
+    color: #2D39B8;
+}
+.penclass{
+    transition: 0.5s ease;
+}
+.ucol-user { width: 17%; padding-left: 16px; }
+.ucol-email { width: 25%; padding-left: 16px; }
+.ucol-med { width: 20%; padding-left: 16px; }
+.ucol-points { width: 22%; padding-left: 16px; }
+.ucol-status { width: 23%; padding-left: 16px; }
+
+.users-header-row {
+    display: flex;
+    width: 100%;
+    gap: 0;
+}
+
+.users-data-row {
+    display: flex;
+    width: 100%;
+    gap: 0;
+    align-items: center;
+    border-top: 1px solid #E8E8E8;
+}
+
+.marginleft40 {
+    margin-left: 40px;
+}
+@media (max-width: 768px) {
+    .ucol-user { width: 25%; padding-left: 8px; font-size: 13px; }
+    .ucol-email { width: 30%; padding-left: 8px; font-size: 13px; }
+    .ucol-med { width: 15%; padding-left: 8px; font-size: 13px; }
+    .ucol-points { width: 15%; padding-left: 8px; font-size: 13px; }
+    .ucol-status { width: 15%; padding-left: 8px; font-size: 13px; }
+}
+
+@media (max-width: 480px) {
+    .ucol-user { width: 28%; padding-left: 4px; font-size: 11px; }
+    .ucol-email { width: 28%; padding-left: 4px; font-size: 11px; }
+    .ucol-med { width: 14%; padding-left: 4px; font-size: 11px; }
+    .ucol-points { width: 14%; padding-left: 4px; font-size: 11px; }
+    .ucol-status { width: 16%; padding-left: 4px; font-size: 11px; }
+}
+
+@media (max-width: 1400px) {
+.forfirstline22{
+    gap: 0;
+    width: 100%;
+}
+.gap120 {
+    gap: 50px;
+}
+.paddingleft130 {
+    padding-left: 90px;
+}
+  .projectstabwidth {
+    width: 100%;}
+    .actionsmledt{
+        margin-left: 25%;
+    }
+}
+@media (max-width: 1200px) {
+ .actionsmledt{
+        margin-left: 13%;
+    }
+}
+@media (max-width: 700px) {
+    .paddingleft130 {
+        padding-left: 20px;
+    }
+    .gap120 {
+        gap: 11px;
+    }
+    .pleft75i {
+    padding-left: 20px;
+}
+.projectpaddingledt20 {
+    padding-left: 20px;
+            font-size: 16px;
+}
+  .foractionbuttons {
+   
+    margin-left: 20px;
+}
+.actionsmledt {
+    margin-left: 0px;
+}
+.recentprojectsDiv {
+   
+    padding: 30px 3px;}
+}
