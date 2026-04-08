@@ -8,6 +8,7 @@ import Messages from './pages/Messages';
 import MessageModal from './pages/MessageModal';
 import Users from './pages/Users';
 import Orders from './pages/Orders';
+import Careers from './pages/Careers';
 
 
 const RoutingApp = () => {
@@ -25,6 +26,9 @@ const RoutingApp = () => {
         <Route path='/edit/:id' element={<EditFeature />} />
           <Route path='/users' element={<Users />} />
                     <Route path='/orders' element={<Orders />} />
+                                        <Route path='/careers' element={<Careers />} />
+
+                    
 
 
 
