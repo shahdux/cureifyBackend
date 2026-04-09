@@ -11,7 +11,8 @@ import Orders from './pages/Orders';
 import Careers from './pages/Careers';
 import Settings from './pages/Settings';
 import Login from './pages/Login';
-import Onboarding from './pages/Onboarding';
+import EditOnboarding from './pages/EditOnboarding';
+import Onboard from './pages/Onboard';
 
 
 const RoutingApp = () => {
@@ -31,7 +32,12 @@ const RoutingApp = () => {
                     <Route path='/orders' element={<Orders />} />
                                         <Route path='/careers' element={<Careers />} />
                                                                                 <Route path='/settings' element={<Settings />} />
-                                                                                                                                                                <Route path='/onboarding' element={<Onboarding />} />
+                <Route path='/edit-onboarding' element={<EditOnboarding />} />
+                                <Route path='/onboarding' element={<Onboard />} />
+                                        <Route path='/onboard-details/:id' element={<EditOnboarding />} />
+
+                               
+
                                                                                                                                                                                                                                                                                                                                 <Route path='/login' element={<Login />} />
 
 

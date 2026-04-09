@@ -55,10 +55,10 @@ const Navbar = () => {
         </div>
         {appOpen && (
           <div className="dropdown-menu">
-            <p>Onboarding</p>
-            <p>Home</p>
-            <p>Pharmacy Search</p>
-            <p>Medicine Details</p>
+                    <Link to="/onboarding" style={{textDecoration: "none"}}>
+
+            <p>Onboarding</p></Link>
+          
           </div>
         )}
 
