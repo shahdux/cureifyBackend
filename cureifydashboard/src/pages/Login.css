@@ -1,0 +1,195 @@
+.loginform{
+    width: 100%;
+    height: auto;
+    padding: 65px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/loginbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.whitecont{
+    width: 75%;
+height: auto;
+padding: 40px 0px;
+border-radius: 34px;
+background: #FBF5F5;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 50px;
+flex-wrap: wrap;
+}
+.logintitle{
+    color: #052651;
+font-family: Poppins;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin: 0;
+}
+.loginsub{
+    color: #052651;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin: 0;
+margin-top: 12px;
+
+}
+.logininput{
+    display: flex;
+height: 68px;
+width: 504px;
+align-items: center;
+
+border-radius: 5px;
+border: 1px solid #052651;
+background: none;
+}
+.username{
+    color: #052651;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin: 0;
+margin-bottom: 12px;
+}
+::placeholder{
+    color: rgba(5, 38, 81, 0.81);
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding-left: 0px;
+
+
+
+}
+.logininput-text {
+
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  padding-left: 20px;
+  font-family: poppins;
+}
+.boxwtext{
+    display: flex;
+    gap: 8px;
+    
+    align-items: center;
+
+}
+.remember{
+    color: #052651;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin: 0;
+}
+.forgetpass{
+    color: #052651;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin: 0;
+}
+.box{
+    width: 25px;
+height: 24px;
+border-radius: 4px;
+border: 1px solid #2D39B8;
+}
+.passwordSection{
+    display: flex;
+    gap: 174px;
+}
+.signup{
+    color: #052651;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin: 0;
+}
+.signup2{
+    color: #052651;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin: 0;
+}
+.loginpart1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+.no-underline{
+text-decoration: none;
+}
+.loginbutton{
+    display: flex;
+height: 68px;
+width: 500px;
+justify-content: center;
+align-items: center;
+gap: 8.466px;
+align-self: stretch;
+border-radius: 46.561px;
+border: 0.705px solid #00A4AA;
+background: #00A4AA;
+box-shadow: 0 4.233px 37.778px 0 rgba(0, 164, 170, 0.48);
+}
+.logintext{
+    color: #FBF5F5;
+font-family: poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+}
+@media (max-width: 700px) {
+.loginform{
+    background-image: none;
+}
+.logininput{
+    width: 440px;
+}
+.passwordSection {
+   
+    gap: 110px;
+}
+.loginButton{
+ width: 440px;
+}
+.illustrationstyle{
+    display: none;
+}
+.whitecont{
+    background: none;
+}
+.loginsub{
+    font-size: 18px;
+}
+.loginbutton{
+    width: 460px;
+}
+}

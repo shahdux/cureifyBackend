@@ -10,6 +10,7 @@ import Users from './pages/Users';
 import Orders from './pages/Orders';
 import Careers from './pages/Careers';
 import Settings from './pages/Settings';
+import Login from './pages/Login';
 
 
 const RoutingApp = () => {
@@ -29,6 +30,8 @@ const RoutingApp = () => {
                     <Route path='/orders' element={<Orders />} />
                                         <Route path='/careers' element={<Careers />} />
                                                                                 <Route path='/settings' element={<Settings />} />
+                                                                                                                                                                <Route path='/login' element={<Login />} />
+
 
 
                     

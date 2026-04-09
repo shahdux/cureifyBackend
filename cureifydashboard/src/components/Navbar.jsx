@@ -76,10 +76,16 @@ const Navbar = () => {
             <p>Policies</p>
           </div>
         )}
+                <Link to="/settings" style={{textDecoration: "none"}}>
+
 
         <Navlink linkicon={setting} linktitle="Settings" navcolor={isActive("/settings")} />
+        </Link>
         <div className='formargintop'></div>
+                        <Link to="/login" style={{textDecoration: "none"}}>
+
         <Navlink linkicon={logout} linktitle="Log out" />
+        </Link>
       </div>
     </>
   );
