@@ -67,11 +67,12 @@ const Navbar = () => {
         </div>
         {webOpen && (
           <div className="dropdown-menu">
-            <p>Home</p>
                     <Link to="/careers" style={{textDecoration: "none"}}>
+            <p>Home</p>
 
-            <p>Careers</p></Link>
+            <p>Careers</p>
             <p>About</p>
+            </Link>
           
           </div>
         )}

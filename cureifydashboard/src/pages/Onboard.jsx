@@ -8,6 +8,7 @@ import TableHeader from '../components/TableHeader';
 import { supabase } from '../supabase';
 import view from "../assets/edit.svg";
 import del from "../assets/delte.svg"
+import StrokeButton from '../components/StrokeButton';
 
 const Onboard = (params) => {
     const { id } = useParams();
@@ -40,6 +41,9 @@ const Onboard = (params) => {
             <div className='mainBar'>
                 <div className='titlewsearch width85p'>
                     <SectionTitle Sectiontitle="Onboarding Screens"/>
+                     <Link to="/add-onboarding" style={{textDecoration: "none"}}>
+            <StrokeButton btext="Add" />
+               </Link>
                 </div>
 
               

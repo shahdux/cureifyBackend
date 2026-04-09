@@ -69,7 +69,7 @@ const AddFeature = () => {
                  
                 <div className='titlewithinput'>
                   <p className='project-image'>Title</p>
-                  <input onChange={(e) => setTitle(e.target.value)} type="text" className='input-width logininput-text' name="" id="" placeholder=''/>  
+                  <input onChange={(e) => setTitle(e.target.value)} type="text" className='input-width logininput-text' name="" id="" placeholder='' />  
                 </div>
                
                 <div className='titlewithinput'>
