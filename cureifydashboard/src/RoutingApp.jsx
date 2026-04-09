@@ -9,6 +9,7 @@ import MessageModal from './pages/MessageModal';
 import Users from './pages/Users';
 import Orders from './pages/Orders';
 import Careers from './pages/Careers';
+import Settings from './pages/Settings';
 
 
 const RoutingApp = () => {
@@ -27,6 +28,8 @@ const RoutingApp = () => {
           <Route path='/users' element={<Users />} />
                     <Route path='/orders' element={<Orders />} />
                                         <Route path='/careers' element={<Careers />} />
+                                                                                <Route path='/settings' element={<Settings />} />
+
 
                     
 

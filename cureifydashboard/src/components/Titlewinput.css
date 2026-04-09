@@ -1,0 +1,44 @@
+.titlewinput{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.inpiutTitle{
+    margin: 0;
+    color: #052651;
+font-family: poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.inputs{
+    display: flex;
+    align-items: center;
+    display: flex;
+width: 510px;
+    height: 49px;
+    padding: 10px 20px;
+align-items: center;
+gap: 241px;
+border-radius: 10px;
+border: 1px solid #BABABA;
+}
+.placeholder-text{
+    color: #052651;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+@media (max-width: 1400px) {
+
+   .titlewinput {
+    width: 80% ;
+}
+.inputs{
+        width: 480px !important;
+}
+}

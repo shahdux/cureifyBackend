@@ -72,7 +72,7 @@ const Navbar = () => {
 
             <p>Careers</p></Link>
             <p>About</p>
-            <p>Job Applications</p>
+          
             <p>Policies</p>
           </div>
         )}

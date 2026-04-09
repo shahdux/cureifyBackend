@@ -1,0 +1,41 @@
+.inputs2sections{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+}
+.section1inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.profilesettingdiv{
+    display: flex;
+width: 86%;
+height: auto;
+padding: 40px 25px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 30px;
+border-radius: 10px;
+border: 1px solid #CACACA;
+background: #FFF;
+box-shadow: 0 4px 4px 0 rgba(215, 217, 226, 0.41);
+}
+.imgcontwidth{
+    width: 95%;
+    display: flex;
+    justify-content: start;
+}
+.imgcontwidth2{
+    width: 95%;
+    display: flex;
+    justify-content: end;
+}
+@media (max-width: 900px) {
+    .inputs {
+        width: 360px
+    }
+}
