@@ -11,6 +11,7 @@ import Orders from './pages/Orders';
 import Careers from './pages/Careers';
 import Settings from './pages/Settings';
 import Login from './pages/Login';
+import Onboarding from './pages/Onboarding';
 
 
 const RoutingApp = () => {
@@ -30,7 +31,9 @@ const RoutingApp = () => {
                     <Route path='/orders' element={<Orders />} />
                                         <Route path='/careers' element={<Careers />} />
                                                                                 <Route path='/settings' element={<Settings />} />
-                                                                                                                                                                <Route path='/login' element={<Login />} />
+                                                                                                                                                                <Route path='/onboarding' element={<Onboarding />} />
+                                                                                                                                                                                                                                                                                                                                <Route path='/login' element={<Login />} />
+
 
 
 

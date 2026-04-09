@@ -1,0 +1,31 @@
+.onboarding-cont {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 0 auto;
+}
+
+.onboarding-screen {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px 0 rgba(196, 202, 224, 0.59);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.screen-title {
+    color: #052651;
+    font-family: Poppins;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.titlewithinput {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}

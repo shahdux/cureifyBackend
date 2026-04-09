@@ -78,20 +78,20 @@ const EditFeature = () => {
                   <p className='project-image imagemargintop'>Image</p>
                   <div className='imagewithbutton'>
                     <div className='inputforiumage inputforiumagec'>
-                      <input type="file" onChange={(e) => setImage(e.target.files[0])} className='input-width' name="" id="" />  
+                      <input type="file" onChange={(e) => setImage(e.target.files[0])} className='input-width logininput-text' name="" id="" />  
                     </div>
                   </div>
                 </div>
                  
                 <div className='titlewithinput'>
                   <p className='project-image'>Title</p>
-                  <input value={title} onChange={(e) => setTitle(e.target.value)} type="text" className='input-width' name="" id="" placeholder=''/>  
+                  <input value={title} onChange={(e) => setTitle(e.target.value)} type="text" className='input-width logininput-text' name="" id="" placeholder=''/>  
                 </div>
                
                 <div className='titlewithinput'>
                   <p className='project-image'>Description</p>
                   <div className='rte1'>
-                    <input value={description} onChange={(e) => setDescription(e.target.value)} type="text" className='input-width2' name="" id="" placeholder=''/>  
+                    <input value={description} onChange={(e) => setDescription(e.target.value)} type="text" className='input-width2 logininput-text' name="" id="" placeholder=''/>  
                   </div>
                 </div>
 

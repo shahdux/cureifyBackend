@@ -166,6 +166,12 @@ font-weight: 700;
 line-height: normal;
 
 }
+.errormsg {
+    color: red;
+    font-size: 13px;
+    margin-top: -8px;
+    font-family: poppins;
+}
 @media (max-width: 700px) {
 .loginform{
     background-image: none;

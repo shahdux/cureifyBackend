@@ -73,7 +73,6 @@ const Navbar = () => {
             <p>Careers</p></Link>
             <p>About</p>
           
-            <p>Policies</p>
           </div>
         )}
                 <Link to="/settings" style={{textDecoration: "none"}}>

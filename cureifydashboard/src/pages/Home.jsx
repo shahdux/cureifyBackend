@@ -3,6 +3,7 @@ import "./Home.css"
 import SectionTitle from '../components/SectionTitle';
 import StatisticCard from '../components/StatisticCard';
 import Navbar from '../components/Navbar';
+import { Link } from 'react-router-dom';
 // import logo from '../assets/logo.svg';
 
 
@@ -50,7 +51,9 @@ const Home = () => {
                 <div className='dashboardPanel'>
                     <div className='panelHeader'>
                         <span className='panelTitle'>Recent Orders</span>
-                        <a href="#" className='panelViewAll'>View All</a>
+                                       <Link to="/orders" style={{textDecoration: "none"}}>
+
+                        <div className='panelViewAll'>View All</div> </Link>
                     </div>
  
                     <div className='dashboardRow'>
@@ -94,7 +97,9 @@ const Home = () => {
                 <div className='dashboardPanel'>
                     <div className='panelHeader'>
                         <span className='panelTitle'>Recent Messages</span>
-                        <a href="#" className='panelViewAll'>View All</a>
+                                                                <Link to="/messages" style={{textDecoration: "none"}}>
+
+                        <div className='panelViewAll'>View All</div> </Link>
                     </div>
  
                     <div className='dashboardRow'>
