@@ -41,8 +41,10 @@ getTaks();
 //       const res = await supabase.from("Features").delete().eq('id', id)
 //     }
 const deleteFeature = async (id) => {
-  const res = await supabase.from("Features").delete().eq('id', id);
-  setFeatures(features.filter((feature) => feature.id !== id));
+  if (window.confirm("Are you sure you want to delete this feature?")) {
+    const res = await supabase.from("Features").delete().eq('id', id);
+    setFeatures(features.filter((feature) => feature.id !== id));
+  }
 };
 
 // const creatFeature = async ()=>{
