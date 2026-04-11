@@ -27,6 +27,8 @@ margin-left: 170px;
     color: #1a1a1a;
     margin: 0;
         font-family: poppins;
+                font-weight: 600
+
 
 }
 
@@ -43,7 +45,9 @@ margin-left: 170px;
     border-radius: 8px;
     padding: 10px 24px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 16px;
+        font-weight: 500
+
 }
 
 .confirm-cancel {
@@ -53,7 +57,8 @@ margin-left: 170px;
     border-radius: 8px;
     padding: 10px 24px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 500
 }
 @media (max-width: 1200px) {
     .mainBar {
