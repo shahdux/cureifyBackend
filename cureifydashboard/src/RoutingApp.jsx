@@ -14,6 +14,7 @@ import Login from './pages/Login';
 import EditOnboarding from './pages/EditOnboarding';
 import Onboard from './pages/Onboard';
 import AddCareer from './pages/AddCareer';
+import EditCareer from './pages/EditCareer';
 
 
 const RoutingApp = () => {
@@ -36,6 +37,8 @@ const RoutingApp = () => {
                 <Route path='/edit-onboarding' element={<EditOnboarding />} />
                                 <Route path='/onboarding' element={<Onboard />} />
                                         <Route path='/onboard-details/:id' element={<EditOnboarding />} />
+                                                                                <Route path='/edit-career/:id' element={<EditCareer />} />
+
                                 <Route path='/add-career' element={<AddCareer />} />
 
                                
