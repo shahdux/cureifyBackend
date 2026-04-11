@@ -13,6 +13,7 @@ import Settings from './pages/Settings';
 import Login from './pages/Login';
 import EditOnboarding from './pages/EditOnboarding';
 import Onboard from './pages/Onboard';
+import AddCareer from './pages/AddCareer';
 
 
 const RoutingApp = () => {
@@ -35,6 +36,7 @@ const RoutingApp = () => {
                 <Route path='/edit-onboarding' element={<EditOnboarding />} />
                                 <Route path='/onboarding' element={<Onboard />} />
                                         <Route path='/onboard-details/:id' element={<EditOnboarding />} />
+                                <Route path='/add-career' element={<AddCareer />} />
 
                                
 

@@ -2,6 +2,59 @@
 margin-left: 170px;
 
 }
+.confirm-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.confirm-box {
+    background: #fff;
+    border-radius: 12px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 360px;
+}
+
+.confirm-text {
+    font-size: 16px;
+    color: #1a1a1a;
+    margin: 0;
+        font-family: poppins;
+
+}
+
+.confirm-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.confirm-delete {
+    background: #e53e3e;
+    font-family: poppins;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.confirm-cancel {
+    background: #f1f1f1;
+    color: #1a1a1a;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    cursor: pointer;
+    font-size: 14px;
+}
 @media (max-width: 1200px) {
     .mainBar {
         margin-left: 0%;

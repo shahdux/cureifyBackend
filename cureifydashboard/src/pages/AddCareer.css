@@ -1,0 +1,147 @@
+.project-image{
+    color: #052651;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.inputforiumage{
+    display: flex;
+height: 164px;
+padding: 10px 20px;
+align-items: center;
+width: 1020px;
+border-radius: 10px;
+background: #FFF;
+box-shadow: 0 4px 12px 0 rgba(196, 202, 224, 0.59);
+}
+.inputforiumagec{
+    height:auto;
+    background: none;
+    padding: 0;
+}
+.imagechnage{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.change{
+    color: #014AB6;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.input-width{
+ width: 100%;
+ display: flex;
+height: 52px;
+
+align-items: center;
+border-radius: 10px;
+background: #FFF;
+box-shadow: 0 4px 12px 0 rgba(196, 202, 224, 0.59);
+border: none;
+
+
+}
+.input-width2{
+ width: 100%;
+ display: flex;
+height: 168px;
+
+align-items: center;
+border-radius: 10px;
+background: #FFF;
+box-shadow: 0 4px 12px 0 rgba(196, 202, 224, 0.59);
+border: none;
+border-radius: 10px;
+
+
+
+}
+.foriconst{
+    display: flex;
+    gap: 12px;
+    background: white;
+    border-radius: 20px 20px 0 0;
+border-bottom: 1px solid #BABABA;
+background: #FFF;
+width: 99%;
+height: 49px;
+align-items: center;
+padding-left: 20px;
+
+
+}
+.buttoncont{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+.imagemargintop{
+    margin-top: 0px;
+}
+.fai2{
+        width: 75%;
+}
+.titlewsearchgap{
+    display: flex;
+    gap: 8px;
+    width: 75%;
+    align-items: start;
+}
+@media (max-width: 1400px) {
+    .forallinputs{
+    width: 100%;
+            display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+.buttoncont{
+    width: 90%;
+}
+ .inputforiumage{
+    width: 95%;
+   
+ }
+ .input-width{
+    width: 100%;
+ }
+ .rte1{
+        width: 80%;
+ }
+ .titlewithinput{
+    width: 90%;
+ }
+.input-width2{
+ width: 100%;}
+ 
+}
+
+@media (max-width: 600px) {
+    .inputforiumage{
+    width: 90%;
+   
+ }
+ .input-width2{
+ width: 425px;}
+ .foriconst{
+     width: 410px;
+ }
+ .titlewsearchgap{
+    display: flex;
+    gap: 8px;
+    width: 90%;
+    align-items: start;
+}
+     .input-widthhhh {
+        width: 93%;
+    }
+}
