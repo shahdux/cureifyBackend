@@ -15,6 +15,10 @@ import EditOnboarding from './pages/EditOnboarding';
 import Onboard from './pages/Onboard';
 import AddCareer from './pages/AddCareer';
 import EditCareer from './pages/EditCareer';
+import Blogs from './pages/Blogs';
+import AddBlog from './pages/AddBlog';
+import EditBlog from './pages/EditBlog';
+
 
 
 const RoutingApp = () => {
@@ -43,7 +47,15 @@ const RoutingApp = () => {
 
                                
 
-                                                                                                                                                                                                                                                                                                                                <Route path='/login' element={<Login />} />
+     <Route path='/login' element={<Login />} />
+          <Route path='/blogs' element={<Blogs />} />
+                                          <Route path='/add-blog' element={<AddBlog />} />
+                                                  <Route path='/edit-blog/:id' element={<EditBlog />} />
+
+
+
+
+
 
 
 
