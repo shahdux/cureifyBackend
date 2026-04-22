@@ -16,7 +16,7 @@ const Login = () => {
     const handleLogin = () => {
         if (email === validEmail && password === validPassword) {
             setError('');
-            navigate('/');
+            navigate('/home');
         } else {
             setError('Invalid email or password');
         }

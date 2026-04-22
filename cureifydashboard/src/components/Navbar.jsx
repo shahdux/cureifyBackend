@@ -84,7 +84,7 @@ const Navbar = () => {
         <Navlink linkicon={setting} linktitle="Settings" navcolor={isActive("/settings")} />
         </Link>
         <div className='formargintop'></div>
-                        <Link to="/login" style={{textDecoration: "none"}}>
+                        <Link to="/" style={{textDecoration: "none"}}>
 
         <Navlink linkicon={logout} linktitle="Log out" />
         </Link>

@@ -26,7 +26,7 @@ const RoutingApp = () => {
         <>
                <BrowserRouter>
         <Routes>
-  <Route path='/' element={<Home />} />
+  <Route path='/home' element={<Home />} />
     <Route path='/features' element={<Features />} />
         <Route path='/messages' element={<Messages />} />
 <Route path="/msg-details/:id" element={<MessageModal />} />
@@ -47,7 +47,7 @@ const RoutingApp = () => {
 
                                
 
-     <Route path='/login' element={<Login />} />
+     <Route path='/' element={<Login />} />
           <Route path='/blogs' element={<Blogs />} />
                                           <Route path='/add-blog' element={<AddBlog />} />
                                                   <Route path='/edit-blog/:id' element={<EditBlog />} />
