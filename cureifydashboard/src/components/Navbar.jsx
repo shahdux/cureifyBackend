@@ -34,8 +34,8 @@ const Navbar = () => {
       <div className={`navbar ${open ? "active" : ""}`}>
         <img src={logosmall} alt="logo" className='logosmall'/>
 
-        <Link to="/" style={{textDecoration: "none"}}>
-          <Navlink linkicon={greyd2} linktitle="Dashboard" navcolor={isActive("/")} />
+        <Link to="/home" style={{textDecoration: "none"}}>
+          <Navlink linkicon={greyd2} linktitle="Dashboard" navcolor={isActive("/home")} />
         </Link>
         <Link to="/users" style={{textDecoration: "none"}}>
           <Navlink linkicon={users} linktitle="Users" navcolor={isActive("/users")} />

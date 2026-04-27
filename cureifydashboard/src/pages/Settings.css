@@ -34,6 +34,52 @@ box-shadow: 0 4px 4px 0 rgba(215, 217, 226, 0.41);
     display: flex;
     justify-content: end;
 }
+.input-row {
+    display: flex;
+    width: 100%;
+    gap: 25px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1; /* Makes them equal width in a row */
+}
+
+.input-label {
+    color: #1B3B61;
+    font-size: 16px;
+    font-weight: 500;
+        font-family: Poppins;
+
+}
+
+.custom-input {
+    font-family: Poppins;
+    height: 50px;
+    padding: 0 15px;
+    border-radius: 8px;
+    border: 1px solid #CACACA;
+    background: #FFF;
+    outline: none;
+    font-size: 14px;
+    color: #1B3B61;
+}
+
+.custom-input:focus {
+    border: 1px solid #00B2A9; /* Using your teal color for focus */
+}
+
+.profileicon {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+}
 @media (max-width: 900px) {
     .inputs {
         width: 360px

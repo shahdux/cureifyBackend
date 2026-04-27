@@ -1,133 +1,189 @@
-import React, { Component, useEffect, useState } from 'react';
+// import React, { Component, useEffect, useState } from 'react';
+// import "./Features.css";
+// import Navbar from '../components/Navbar';
+// import SectionTitle from '../components/SectionTitle';
+// import FeatureCard from '../components/FeatureCard';
+
+// import fimg1 from "../assets/fcard1.svg"
+// import { supabase } from '../supabase';
+// import edit from "../assets/edit.svg";
+// import del from "../assets/delte.svg"
+// import StrokeButton from '../components/StrokeButton';
+// import { Link } from 'react-router-dom';
+// import add from '../assets/add.svg';
+// import logo from '../assets/smalllogo.svg';
+
+
+// const Features = () => {
+//   const [loading, setLoading] = useState(true);
+//    const [features, setFeatures] = useState([""]);
+
+// useEffect(()=>{
+//   const getTaks = async ()=>{
+//     const res = await supabase.from("Features").select("*");
+//    setFeatures(res.data);
+//    setLoading(false);
+
+// }
+// getTaks();
+// },[]);
+//  if (loading) return (
+//         <div className="loader-container">
+//             <img src={logo} alt="loading" className="loader-logo" />
+//         </div>
+//     );
+
+// const deleteFeature = async (id) => {
+//   if (window.confirm("Are you sure you want to delete this feature?")) {
+//     const res = await supabase.from("Features").delete().eq('id', id);
+//     setFeatures(features.filter((feature) => feature.id !== id));
+//   }
+// };
+
+//     return ( 
+//         <>
+//           <div className='nabarwithmain'>
+//         <Navbar/>
+//         <div className='mainBar'>
+//               <div className='titlewsearch width85p'>
+//             <SectionTitle Sectiontitle="Features"/>
+//                <Link to="/add-feature" style={{textDecoration: "none"}}>
+//             <StrokeButton btext="Add" />
+//                </Link>
+         
+//             </div>
+            
+       
+
+//         <div className='forfeaturesdiv'>
+//          {
+//            features.map((feature)=>{
+//              return   <div className='forfeaturesdiv'> 
+//               <div className='featurecard'> 
+//  <img src={feature.thumbnail} alt="feature cover img" className='featureimgclass'/>
+//  <div className='for2texts'>
+//                    <p className='featureTitle'>{feature.name_en}</p>
+//                            <p className='featureDes'>{feature.des2}</p>
+//                </div>
+//                <div className='icons'>
+//            <Link to ={"/edit/"+feature.id}>
+           
+//                <img src={edit} alt="edit icon" />
+//            </Link>
+//                    <img onClick={()=> deleteFeature(feature.id)} src={del} alt="delete icon" />
+//                </div>
+//               </div>
+             
+       
+             
+//              </div>
+//             })
+//           }
+  
+//         </div>
+        
+//           </div>
+//           </div>
+//         </>
+//      );
+// }
+ 
+// export default Features;
+
+import React, { useEffect, useState } from 'react';
 import "./Features.css";
 import Navbar from '../components/Navbar';
 import SectionTitle from '../components/SectionTitle';
 import FeatureCard from '../components/FeatureCard';
-// import FeatureCard from '../component/FeatureCard';
-// import { supabase } from '../Supabase';
-import fimg1 from "../assets/fcard1.svg"
+
 import { supabase } from '../supabase';
 import edit from "../assets/edit.svg";
 import del from "../assets/delte.svg"
 import StrokeButton from '../components/StrokeButton';
 import { Link } from 'react-router-dom';
-import add from '../assets/add.svg';
-
+import logo from '../assets/smalllogo.svg';
 
 const Features = () => {
-   const [features, setFeatures] = useState([""]);
-//    const [loading, setLoading] = useState(true);
-//    const [features, setFeatures] = useState("");
+    const [loading, setLoading] = useState(true);
+    const [features, setFeatures] = useState([]);
+    const [confirmId, setConfirmId] = useState(null); 
 
-//    useEffect(()=>{
-//          async function callGetAPI3(){
-//                const res = await supabase.from("Features").select("*");
-//                setFeatures(res.data);
-//                setLoading(false);
-//          }
-//          callGetAPI3();
-//    },[]);
-//    if (loading) return <p>Loading...</p>;
-useEffect(()=>{
-  const getTaks = async ()=>{
-    const res = await supabase.from("Features").select("*");
-   setFeatures(res.data);
+    useEffect(() => {
+        const getTaks = async () => {
+            const res = await supabase.from("Features").select("*");
+            setFeatures(res.data);
+            setLoading(false);
+        }
+        getTaks();
+    }, []);
 
-}
-getTaks();
-},[]);
-
-// const deleteFeature = async (id)=>{
-//       const res = await supabase.from("Features").delete().eq('id', id)
-//     }
-const deleteFeature = async (id) => {
-  if (window.confirm("Are you sure you want to delete this feature?")) {
-    const res = await supabase.from("Features").delete().eq('id', id);
-    setFeatures(features.filter((feature) => feature.id !== id));
-  }
-};
-
-// const creatFeature = async ()=>{
-//  const res = await supabase.from("Features").insert([{
-//   "name_en": "test"
-//  }])
-//  console.log(res)
-// }
-    return ( 
-        <>
-          <div className='nabarwithmain'>
-        <Navbar/>
-        <div className='mainBar'>
-              <div className='titlewsearch width85p'>
-            <SectionTitle Sectiontitle="Features"/>
-               <Link to="/add-feature" style={{textDecoration: "none"}}>
-            <StrokeButton btext="Add" />
-               </Link>
-            {/* <div  className='strokeb'>
-                    <img src={add} alt="add icon" />
-                    <p className='stoketext'>Add</p>
-                </div> */}
-            </div>
-            
-           {/* <div className='featurecard'>
-               <img src={props.featureimg} alt="feature cover img" className='featureimgclass'/>
-               <div className='for2texts'>
-                   <p className='featureTitle'>{props.featuretitle}</p>
-                           <p className='featureDes'>{props.featuredes}</p>
-               </div>
-               <div className='icons'>
-           
-               <img src={edit} alt="edit icon" />
-                   <img onClick={()=> deleteFeature} src={del} alt="delete icon" />
-               </div>
-           
-           </div> */}
-
-        <div className='forfeaturesdiv'>
-         {
-           features.map((feature)=>{
-             return   <div className='forfeaturesdiv'> 
-              <div className='featurecard'> 
- <img src={feature.thumbnail} alt="feature cover img" className='featureimgclass'/>
- <div className='for2texts'>
-                   <p className='featureTitle'>{feature.name_en}</p>
-                           <p className='featureDes'>{feature.des2}</p>
-               </div>
-               <div className='icons'>
-           <Link to ={"/edit/"+feature.id}>
-           
-               <img src={edit} alt="edit icon" />
-           </Link>
-                   <img onClick={()=> deleteFeature(feature.id)} src={del} alt="delete icon" />
-               </div>
-              </div>
-             
-              {/* <FeatureCard
-             featureimg={feature.thumbnail}
-             featuretitle={feature.name_en}
-             featuredes={feature.des2}
-             
-             /> */}
-             
-             </div>
-            })
-          }
-       {/* <FeatureCard
-             featureimg={fimg1}
-             featuretitle="fuheu"
-             featuredes="j"
-             />
-              <FeatureCard
-             featureimg={fimg1}
-             featuretitle="fuheu"
-             featuredes="j"
-             /> */}
+    if (loading) return (
+        <div className="loader-container">
+            <img src={logo} alt="loading" className="loader-logo" />
         </div>
-        
-          </div>
-          </div>
+    );
+
+    const deleteFeature = async (id) => {
+        await supabase.from("Features").delete().eq('id', id);
+        setFeatures(features.filter((feature) => feature.id !== id));
+        setConfirmId(null); 
+    };
+
+    return (
+        <>
+         
+            {confirmId && (
+                <div className='confirm-overlay'>
+                    <div className='confirm-box'>
+                        <p className='confirm-text'>Are you sure you want to delete this feature?</p>
+                        <div className='confirm-buttons'>
+                            <button className='confirm-delete' onClick={() => deleteFeature(confirmId)}>Delete</button>
+                            <button className='confirm-cancel' onClick={() => setConfirmId(null)}>Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            )}
+
+            <div className='nabarwithmain'>
+                <Navbar />
+                <div className='mainBar'>
+                    <div className='titlewsearch width85p'>
+                        <SectionTitle Sectiontitle="Features" />
+                        <Link to="/add-feature" style={{ textDecoration: "none" }}>
+                            <StrokeButton btext="Add" />
+                        </Link>
+                    </div>
+
+                    <div className='forfeaturesdiv'>
+                        {features.map((feature) => {
+                            return (
+                                <div className='forfeaturesdiv' key={feature.id}>
+                                    <div className='featurecard'>
+                                        <img src={feature.thumbnail} alt="feature cover img" className='featureimgclass' />
+                                        <div className='for2texts'>
+                                            <p className='featureTitle'>{feature.name_en}</p>
+                                            <p className='featureDes'>{feature.des2}</p>
+                                        </div>
+                                        <div className='icons'>
+                                            <Link to={"/edit/" + feature.id}>
+                                                <img src={edit} alt="edit icon" />
+                                            </Link>
+                                            <img 
+                                                onClick={() => setConfirmId(feature.id)} 
+                                                src={del} 
+                                                alt="delete icon" 
+                                                style={{ cursor: 'pointer' }}
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            )
+                        })}
+                    </div>
+                </div>
+            </div>
         </>
-     );
+    );
 }
- 
+
 export default Features;

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import "./Features.css";
+import { motion } from 'framer-motion';
 import Navbar from '../components/Navbar';
 import SectionTitle from '../components/SectionTitle';
 import edit from "../assets/edit.svg";
@@ -7,15 +8,25 @@ import del from "../assets/delte.svg";
 import StrokeButton from '../components/StrokeButton';
 import { Link } from 'react-router-dom';
 import { supabase } from '../supabase';
+import logo from '../assets/smalllogo.svg';
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 32 },
+  visible: { opacity: 1, y: 0 }
+};
+
+const vp = { once: true, amount: 0.2 };
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
   const [confirmId, setConfirmId] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const getBlogs = async () => {
       const res = await supabase.from("Blogs").select("*");
       setBlogs(res.data ?? []);
+      setLoading(false);
     };
     getBlogs();
   }, []);
@@ -25,6 +36,12 @@ const Blogs = () => {
     setBlogs(blogs.filter((blog) => blog.id !== id));
     setConfirmId(null);
   };
+
+  if (loading) return (
+    <div className="loader-container">
+      <img src={logo} alt="loading" className="loader-logo" />
+    </div>
+  );
 
   return (
     <>
@@ -43,16 +60,34 @@ const Blogs = () => {
       <div className='nabarwithmain'>
         <Navbar />
         <div className='mainBar'>
-          <div className='titlewsearch width85p'>
+          <motion.div 
+            className='titlewsearch width85p'
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 0.6 }}
+            viewport={vp}
+          >
             <SectionTitle Sectiontitle="Blogs" />
             <Link to="/add-blog" style={{ textDecoration: "none" }}>
               <StrokeButton btext="Add" />
             </Link>
-          </div>
+          </motion.div>
 
           <div className='forfeaturesdiv'>
-            {blogs.map((blog) => (
-              <div className='forfeaturesdiv'>
+            {blogs.map((blog, index) => (
+              <motion.div 
+                className='forfeaturesdiv' 
+                key={blog.id}
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="visible"
+                transition={{ duration: 0.45, delay: index * 0.05 }}
+                viewport={vp}
+                whileHover={{ scale: 1.02 }} // Added hover effect
+                whileTap={{ scale: 0.98 }}   // Added tap effect
+                style={{ cursor: 'pointer' }}
+              >
                 <div className='featurecard'>
                   <img src={blog.image} alt="blog cover img" className='featureimgclass' />
                   <div className='for2texts'>
@@ -66,10 +101,9 @@ const Blogs = () => {
                     <img onClick={() => setConfirmId(blog.id)} src={del} alt="delete icon" style={{ cursor: 'pointer' }} />
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
-
         </div>
       </div>
     </>
