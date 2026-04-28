@@ -4,7 +4,10 @@ import Navbar from '../components/Navbar';
 import SectionTitle from '../components/SectionTitle';
 import Button from '../components/Button';
 import { supabase } from '../supabase';
-import { useNavigate, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
+import back2 from '../assets/back2.svg';
+
+
 
 const EditOnboarding = () => {
     const [loading, setLoading] = useState(true);
@@ -76,10 +79,15 @@ const EditOnboarding = () => {
             <div className='nabarwithmain'>
                 <Navbar />
                 <div className='mainBar'>
-                    <div className='titlewsearch width90'>
+                    {/* <div className='titlewsearch width90'>
                         <SectionTitle Sectiontitle="Edit Onboarding" />
-                    </div>
-
+                    </div> */}
+  <div className='w9033'>
+                    <Link to="/onboarding" style={{textDecoration: "none"}}>
+                        <img src={back2} alt="back icon" />
+                    </Link>
+                    <SectionTitle Sectiontitle="Edit Onboarding Screen"/>
+                </div>
                     <div className='onboarding-cont'>
                         <div className='onboarding-screen'>
                             <h2 className='screen-title'>Screen 1</h2>

@@ -20,6 +20,7 @@ import AddBlog from './pages/AddBlog';
 import EditBlog from './pages/EditBlog';
 import AddOrder from './pages/AddOrder';
 import EditOrder from './pages/EditOrder';
+import AddOnboarding from './pages/AddOnbording';
 
 
 
@@ -58,6 +59,8 @@ const RoutingApp = () => {
 
         <Route path='/add-order' element={<AddOrder />} />
                 <Route path='/edit-order/:id' element={<EditOrder />} />
+                        <Route path='/add-onboarding' element={<AddOnboarding />} />
+
 
 
 

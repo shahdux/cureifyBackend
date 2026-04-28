@@ -32,3 +32,10 @@
 .w98{
     width: 98%;
 }
+.w9033{
+    width: 90%;
+        display: flex;
+    gap: 8px;
+    width: 75%;
+    align-items: start;
+}
