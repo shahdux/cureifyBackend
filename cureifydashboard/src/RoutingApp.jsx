@@ -18,6 +18,8 @@ import EditCareer from './pages/EditCareer';
 import Blogs from './pages/Blogs';
 import AddBlog from './pages/AddBlog';
 import EditBlog from './pages/EditBlog';
+import AddOrder from './pages/AddOrder';
+import EditOrder from './pages/EditOrder';
 
 
 
@@ -53,6 +55,9 @@ const RoutingApp = () => {
                                                   <Route path='/edit-blog/:id' element={<EditBlog />} />
 
 
+
+        <Route path='/add-order' element={<AddOrder />} />
+                <Route path='/edit-order/:id' element={<EditOrder />} />
 
 
 

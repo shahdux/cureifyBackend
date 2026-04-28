@@ -89,7 +89,9 @@ const Orders = () => {
                                         </span>
                                     </div>
                                     <div className='orderActions'>
-                                        <img src={edit} alt="edit icon" className='orderActionIcon' />
+                                        <Link to={"/edit-order/" + order.id}>
+                                                                                        <img src={edit} alt="edit icon" />
+                                                                                    </Link>
                                         <img
                                             src={del}
                                             alt="delete icon"
