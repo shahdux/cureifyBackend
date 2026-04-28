@@ -57,7 +57,12 @@ const Navbar = () => {
           <div className="dropdown-menu">
                     <Link to="/onboarding" style={{textDecoration: "none"}}>
 
-            <p>Onboarding</p></Link>
+            <p>Onboarding</p>
+            </Link>
+              <Link to="/pharmacies" style={{textDecoration: "none"}}>
+
+            <p>Pharmacies</p>
+            </Link>
           
           </div>
         )}

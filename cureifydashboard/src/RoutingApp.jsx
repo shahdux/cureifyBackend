@@ -24,6 +24,9 @@ import AddOnboarding from './pages/AddOnbording';
 import HowItWorks from './pages/HowItWorks';
 import AddHowItWorks from './pages/AddHowItWorks';
 import EditHowItWorks from './pages/EditHowItWorks';
+import Pharmacies from './pages/Pharmacies';
+import EditPharmacy from './pages/EditPharmacy';
+import AddPharmacy from './pages/AddPharmacy';
 
 
 
@@ -68,8 +71,10 @@ const RoutingApp = () => {
 
 <Route path="/add-how-it-works" element={<AddHowItWorks />} />
 <Route path="/how-it-works/edit/:id" element={<EditHowItWorks />} />
+<Route path="/pharmacies" element={<Pharmacies />} />
 
-
+<Route path="/add-pharmacy" element={<AddPharmacy />} />
+<Route path="/edit-pharmacy/:id" element={<EditPharmacy />} />
 
 
 
