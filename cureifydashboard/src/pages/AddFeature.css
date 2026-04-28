@@ -1,132 +1,89 @@
-.project-image{
-    color: #052651;
-font-family: Poppins;
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-}
-.inputforiumage{
+
+.forallinputs {
     display: flex;
-height: 164px;
-padding: 10px 20px;
-align-items: center;
-width: 1020px;
-border-radius: 10px;
-background: #FFF;
-box-shadow: 0 4px 12px 0 rgba(196, 202, 224, 0.59);
+    flex-direction: column;
+    gap: 25px; 
+    width: 1020px;
+    margin-top: 30px;
 }
-.inputforiumagec{
-    height:auto;
-    background: none;
-    padding: 0;
+
+.titlewithinput {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
 }
-.imagechnage{
+
+
+.project-image {
+    color: #052651;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.input-width {
+    width: 100%;
+    height: 52px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0 4px 12px 0 rgba(196, 202, 224, 0.4);
     display: flex;
     align-items: center;
-    gap: 8px;
+    overflow: hidden;
 }
-.change{
-    color: #014AB6;
-font-family: Poppins;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
-.input-width{
- width: 100%;
- display: flex;
-height: 52px;
 
-align-items: center;
-border-radius: 10px;
-background: #FFF;
-box-shadow: 0 4px 12px 0 rgba(196, 202, 224, 0.59);
-border: none;
-
-
-}
-.input-width2{
- width: 100%;
- display: flex;
-height: 168px;
-
-align-items: center;
-border-radius: 10px;
-background: #FFF;
-box-shadow: 0 4px 12px 0 rgba(196, 202, 224, 0.59);
-border: none;
-border-radius: 10px;
-
-
-
-}
-.foriconst{
-    display: flex;
-    gap: 12px;
-    background: white;
-    border-radius: 20px 20px 0 0;
-border-bottom: 1px solid #BABABA;
-background: #FFF;
-width: 99%;
-height: 49px;
-align-items: center;
-padding-left: 20px;
-
-
-}
-.buttoncont{
+.input-width2 {
     width: 100%;
-    margin-top: 30px;
+    height: 168px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0 4px 12px 0 rgba(196, 202, 224, 0.4);
     display: flex;
-    align-items: end;
-    justify-content: end;
-}
-.imagemargintop{
-    margin-top: 0px;
+    flex-direction: column;
 }
 
+.inner-input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0 20px;
+    font-family: Poppins;
+    font-size: 16px;
+    color: #052651;
+}
+
+.inner-textarea {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 15px 20px;
+    font-family: Poppins;
+    font-size: 16px;
+    resize: none;
+    color: #052651;
+     box-sizing: border-box;
+    
+}
+
+.rtl-input {
+    direction: rtl;
+    text-align: right;
+}
+
+.inner-input[type="file"] {
+    line-height: 52px; /* Centers the "Choose File" text */
+    padding-top: 10px;
+}
+.paddingdown{
+    padding-bottom: 50px;
+}
 
 @media (max-width: 1400px) {
-    .forallinputs{
-    width: 100%;
-            display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-}
-
-.buttoncont{
-    width: 90%;
-}
- .inputforiumage{
-    width: 95%;
-   
- }
- .input-width{
-    width: 100%;
- }
- .rte1{
-        width: 80%;
- }
- .titlewithinput{
-    width: 90%;
- }
-.input-width2{
- width: 100%;}
- 
-}
-
-@media (max-width: 600px) {
-    .inputforiumage{
-    width: 90%;
-   
- }
- .input-width2{
- width: 425px;}
- .foriconst{
-     width: 410px;
- }
- 
+    .forallinputs { width: 95% }
 }
